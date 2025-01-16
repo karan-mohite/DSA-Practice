@@ -7,7 +7,18 @@ public class DisplaySquareofNumberForAnArray {
         // System.out.println(arr[i]*arr[i]);
         // }
 
-        int n = (int) (Math.sqrt(13));
-        System.out.println(n);
+        // int n = (int) (Math.sqrt(13));
+        // System.out.println(n);
+
+        int arr[]={25,9,13,16,21};
+
+        for(int n:arr)
+        {
+            int sq=(int)Math.sqrt(n);
+            if(sq*sq==n)
+            {
+                    System.out.println(n);  
+            }
+        }
     }
 }
