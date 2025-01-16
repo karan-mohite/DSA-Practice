@@ -21,7 +21,5 @@ public class hello {
         // System.out.println(s);
         
         hello obj=new hello();
-        
-
     }
 }
