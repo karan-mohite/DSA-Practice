@@ -9,7 +9,7 @@ public class insertionsort {
         System.out.println("After:" + Arrays.toString(arr));
     }
 
-    private static void insertionsort(int arr[]) {
+    static void insertionsort(int arr[]) {
         int temp, j;
         for (int k = 1; k < arr.length; k++) {
             temp = arr[k];

@@ -9,7 +9,7 @@ public class MergeSort {
     System.out.println("After merge sort:"+Arrays.toString(arr));
  }  
                                             //0         //7
- private  static void mergeSort(int arr[],int first,int last)
+ static void mergeSort(int arr[],int first,int last)
  {  
     if(first<last)
     {

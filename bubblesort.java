@@ -8,7 +8,7 @@ public class bubblesort {
         System.out.println("After:" + Arrays.toString(arr));
     }
 
-    private static void bubblesort(int arr[]) {
+    static void bubblesort(int arr[]) {
         int temp;
         for (int i = 1; i < arr.length; i++) {
             for (int j = 0; j < arr.length - i; j++) {
