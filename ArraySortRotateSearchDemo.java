@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 import java.util.Scanner;
- 
+
 public class ArraySortRotateSearchDemo {
 
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class ArraySortRotateSearchDemo {
         RotateArray ar = new RotateArray();
         ar.rotateArray(arr, mid);
         System.out.println("After Rotation At Mid: " + Arrays.toString(arr));
-
+        
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Number to Search");
         int search = sc.nextInt();
