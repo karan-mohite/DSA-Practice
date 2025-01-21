@@ -3,8 +3,7 @@ import java.util.Stack;
 public class ParenthesisMatchingUsingStack {
     public static void main(String[] args) {
         String expression = "{[()]}";
-        if(expression.length()%2==0)
-        {
+        if (expression.length() % 2 == 0) {
             boolean result = checkValidness(expression);
 
             if (result == true) {
@@ -12,12 +11,10 @@ public class ParenthesisMatchingUsingStack {
             } else {
                 System.out.print("Not well formed");
             }
-        }
-        else
-        {
+        } else {
             System.out.print("Not well formed..!!");
         }
-       
+
     }
 
     private static boolean checkValidness(String expression) {
@@ -29,8 +26,7 @@ public class ParenthesisMatchingUsingStack {
                 stack.push(ch);
                 continue;
             }
-            if(stack.isEmpty())
-            {
+            if (stack.isEmpty()) {
                 return false;
             }
             char z;
