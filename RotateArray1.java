@@ -8,9 +8,9 @@ public class RotateArray1 {
                 for(j=1;j<arr.length;j++)
                 {
                     arr[j-1]=arr[j];
-
                 }
                 arr[j-1]=temp;
             }
         }
 }
+
