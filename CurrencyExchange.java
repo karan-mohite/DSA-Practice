@@ -35,6 +35,19 @@ public class CurrencyExchange {
     }
 
     private static void exchange(int[] currency, int exchangeAmount) {
-
+        int notes[] = new int[currency.length];
+        int noteCount = 0;
+        for (int i = 0; i < currency.length; i++) {
+            notes[i] = exchangeAmount / currency[i];
+            exchangeAmount = exchangeAmount % currency[i];
+            noteCount += notes[i];
+        }
+        System.out.println("After sorting " + Arrays.toString(notes));
+        for (int i = 0; i < currency.length; i++) {
+            if (notes[i] != 0)
+                // System.out.println(currency[i] + "X" + notes[i]);
+                System.out.println(String.format("%d X %d", notes[i], currency[i]));
+        }
+        System.out.println("Total Notes:" + noteCount);
     }
 }
