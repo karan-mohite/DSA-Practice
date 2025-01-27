@@ -36,6 +36,5 @@ public class currencyExchange3 {
                 System.out.println(String.format("%d X %d", notes, curr));
         }
         System.out.println("Total Notes:" + noteCount);
-
     }
 }
