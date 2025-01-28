@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class SinglyLinkedList {
     public static void main(String[] args) {
         Node head = null;
+        Scanner sc = new Scanner(System.in);
         head = create(head);
         System.out.println("Display After Creation:");
         display(head);
@@ -15,6 +16,24 @@ public class SinglyLinkedList {
         System.out.println("Display After Adding at Last position:");
         display(head);
 
+        System.out.println("Enter the positon of new node");
+        int position = sc.nextInt();
+        addMid(head, position);
+        System.out.println("Display After Adding At " + position + "nth position:");
+        display(head);
+
+    }
+
+    private static void addMid(Node head, int position) {
+        Node temp = head;
+        int i = 1;
+        while (i < position - 1) {
+            temp = temp.next;
+            i++;
+        }
+        Node nn = getNode();
+        nn.next = temp.next;
+        temp.next = nn;
     }
 
     private static Node addLast(Node head) {
