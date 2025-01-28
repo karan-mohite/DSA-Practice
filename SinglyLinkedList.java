@@ -38,7 +38,13 @@ public class SinglyLinkedList {
     }
 
     private static void deleteMid(Node head, int dposition) {
-        
+        Node temp = head;
+        int i = 1;
+        while (i < dposition - 1) {
+            temp = temp.next;
+            i++;
+        }
+        temp.next = temp.next.next;
     }
 
     private static void deleteLast(Node head) {
